@@ -1,4 +1,4 @@
-package cn.edu.jit.salarymanagementsystem;
+package cn.edu.jit.system;
 
 import java.io.*;
 import javax.servlet.http.*;
