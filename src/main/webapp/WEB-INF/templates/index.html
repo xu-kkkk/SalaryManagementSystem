@@ -3,8 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>梦阳公司工资管理系统</title>
+
+    <link rel="stylesheet" th:href="@{/static/bootstrap-4.6.0-dist/css/bootstrap.min.css}">
+    <script th:src="@{/static/script/jquery-3.6.0.me.js}"></script>
+    <script th:src="@{/static/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{/static/script/vue.js}"></script>
+    <script th:src="@{/static/script/index.js}"></script>
 </head>
 <body>
-    <h1>梦阳公司工资管理系统</h1>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="jumbotron">
+                <h1 class="display-3">梦阳公司工资管理系统</h1>
+                <p class="lead text-right">金陵科技学院</p>
+                <hr class="my-2">
+                <p>由xxx, xxx, xxx, xxx开发</p>
+                <!--                <p class="lead">-->
+                <!--                    <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button"></a>-->
+                <!--                </p>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="col text-right">
+                        <span class="alert alert-primary p-2 m-4" role="alert">
+                            <!--判断用户是否登录。若登录，显示用户名，否则显示“未登录”-->
+                            <span th:text="未登录"></span>
+                        </span>
+                <div class="btn-group">
+                    <a th:href="@{/login}" class="btn btn-outline-primary">登录</a>
+                    <a th:href="@{/register}" class="btn btn-outline-primary">注册</a>
+                    <a th:href="@{/logout}" id="a_logout" class="btn btn-outline-primary">注销</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
